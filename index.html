@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+	<!-- meta charec set -->
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Page Title -->
+	<title>Thiết kế web</title>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Font -->
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- CSS
+		================================================== -->
+	<!-- Fontawesome Icon font -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Twitter Bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- jquery.fancybox  -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<!-- animate -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- media-queries -->
+	<link rel="stylesheet" href="css/media-queries.css">
+
+	<!-- Modernizer Script for old Browsers -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<script>
+
+		const openLink = (txt) => {
+			// github
+			const id = window.location.search.replace('?', '');
+			// local
+			//const id = window.location.search.replace('?id=', '');
+			if (txt == 'teams') {
+				if (id == 2248) { var link = `https://teams.microsoft.com/l/team/19%3ajonJs8k2gtRwln0vrX-7vlcoHh35FeLsRhBb6D37APs1%40thread.tacv2/conversations?groupId=abc3c901-40b4-415e-9eb9-65db0ddb047e&tenantId=6e0182cd-b36b-4286-b337-e3811b35f106` }
+				if (id == 1434) { var link = `` }
+				if (id == 1435) { var link = `` }
+				if (id == 1436) { var link = `` }
+				if (id == 1437) { var link = `` }
+				window.open(link, "_blank");
+			}
+			else {
+				const link = `https://canvas.dntu.edu.vn/courses/${id}/${txt}`
+				window.open(link, "_blank");
+			}
+
+		}
+	</script>
+
+</head>
+
+<body id="body">
+
+	<!-- preloader -->
+	<div id="preloader">
+		<img src="img/preloader.gif" alt="Preloader">
+	</div>
+	<!-- end preloader -->
+
+
+	<!--
+        Home Slider
+        ==================================== -->
+
+	<section id="slider">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+			<!-- Indicators bullet -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			</ol>
+			<!-- End Indicators bullet -->
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+
+				<!-- single slide -->
+				<div class="item active" style="background-image: url(img/banner.jpg);">
+					<div class="carousel-caption">
+						<h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Chào
+								mừng</span> đến lớp học</h3>
+						<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">
+							Thiết kế<span> Web</span>!</h2>
+						<br>
+						<p data-wow-duration="1000ms" class="wow slideInRight animated">ThS. Đỗ Phúc Thịnh
+						</p>
+
+						<ul class="social-links text-center">
+							<li><a href="https://www.facebook.com/phucthinhdo.dntu"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="https://zalo.me/0847088880"><i class="fa fa-phone"></i></a></li>
+							<li><a href="https://scholar.google.com/citations?user=3NsJ--wAAAAJ" target="_blank"><i
+										class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end single slide -->
+
+				<!-- single slide -->
+				<div class="item" style="background-image: url(img/banner.jpg);">
+					<div class="carousel-caption">
+						<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">Ngôn
+								ngữ</span> sẽ được sử dụng là</h3>
+						<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">
+							<span> HTML & CSS (+Javascript)</span>!
+						</h2>
+						<br>
+						<p data-wow-duration="500ms" class="wow slideInRight animated">ThS. Đỗ Phúc Thịnh
+						</p>
+
+						<ul class="social-links text-center">
+							<li><a href="https://www.facebook.com/phucthinhdo.dntu"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li><a href="https://zalo.me/0847088880"><i class="fa fa-phone"></i></a></li>
+							<li><a href="https://scholar.google.com/citations?user=3NsJ--wAAAAJ"><i
+										class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end single slide -->
+
+			</div>
+			<!-- End Wrapper for slides -->
+
+		</div>
+	</section>
+
+	<!--
+        End Home SliderEnd
+        ==================================== -->
+
+	<!--
+        THÔNG BÁO
+        ==================================== -->
+
+	<!-- <section id="works" class="works clearfix">
+		<div class="container">
+			<div class="row">
+
+				<div class="sec-title text-center">
+					<h2>THÔNG BÁO TUẦN 07!</h2>
+					<h3>Hoàn thành các bài tập cơ bản của tuần 4 và tuần 6</h3>
+					<div class="devider"><i class="fa fa-book fa-lg"></i></div>
+				</div>
+				<div class="sec-sub-title text-center">
+					<p>Chú ý cài đặt mục "ASP.NET and web development" (Visual Studio 2022)
+					</p>
+				</div>
+				<div class="sec-sub-title text-center">
+					<p>Visual Studio Community 2022:
+						<a href="https://visualstudio.microsoft.com/vs/community/" style="color:red">
+							Tải xuống
+						</a>
+					</p>
+				</div>
+
+
+			</div>
+		</div>
+	</section> -->
+
+	<!--
+        Features
+        ==================================== -->
+
+	<section id="features" class="features">
+		<div class="container">
+			<div class="row">
+
+				<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+					<h2>Nội dung</h2>
+					<div class="devider"><i class="fa fa-book fa-lg"></i></div>
+				</div>
+
+				<!-- service item -->
+				<a href="#" onclick="openLink('pages/de-cuong');">
+					<div class="col-sm-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-file-text-o fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Đề cương</h3>
+								<!-- <p></p> -->
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<a href="#" onclick="openLink('pages/bai-giang');">
+					<div class="col-sm-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-book fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Bài giảng</h3>
+
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<a href="#" onclick="openLink('assignments');">
+					<div class="col-sm-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-pencil fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Bài tập</h3>
+
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+				<br><br>
+
+
+			</div>
+
+			<div class="row" style="margin-top:25px">
+				<!-- service item -->
+				<a href="#" onclick="openLink('modules');">
+					<div class="col-sm-4 wow fadeInLeft" data-wow-duration="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-list fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Modules</h3>
+								<!-- <p></p> -->
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<a href="#" onclick="openLink('teams');">
+					<div class="col-sm-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-windows fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Microsoft Teams</h3>
+
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<a href="https://www.facebook.com/groups/807358897312506" target="blank">
+					<div class="col-sm-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-facebook-square fa-2x"></i>
+							</div>
+
+							<div class="service-desc">
+								<h3>Facebook lớp</h3>
+
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- end service item -->
+
+			</div>
+		</div>
+	</section>
+
+	<!--
+        End Features
+        ==================================== -->
+
+	<!--
+        Giảng viên
+        ==================================== -->
+
+	<section id="team" class="team">
+		<div class="container ">
+			<div class="row ">
+
+				<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+					<h2>Giảng viên</h2>
+					<div class="devider"><i class="fa fa-book fa-lg"></i></div>
+				</div>
+
+				<div class="sec-sub-title text-center">
+					<p></p>
+				</div>
+
+				<!-- single member -->
+				<figure class="team-member col-md-4 col-sm-4 text-center wow fadeInUp animated"
+					data-wow-duration="500ms">
+				</figure>
+				<!-- end single member -->
+
+				<!-- single member -->
+
+				<figure class="team-member col-md-4 col-sm-4 text-center" data-wow-duration="500ms"
+					data-wow-delay="300ms">
+					<div class="member-thumb">
+						<img src="img/gv.jpg" alt="Team Member" class="img-responsive imgcenter">
+						<figcaption class="overlay">
+							<h5>Thông tin</h5>
+							<p>Bấm icon để xem chi tiết</p>
+							<ul class="social-links text-center">
+								<li><a href="https://www.facebook.com/phucthinhdo.dntu"><i
+											class="fa fa-facebook"></i></a>
+								</li>
+								<li><a href="https://zalo.me/0847088880"><i class="fa fa-phone"></i></a>
+								</li>
+								<li><a href="https://scholar.google.com/citations?user=3NsJ--wAAAAJ"><i
+											class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>Đỗ Phúc Thịnh</h4>
+					<span>Thạc sĩ</span>
+				</figure>
+
+				<!-- end single member -->
+
+				<!-- single member -->
+				<figure class="team-member col-md-4 col-sm-4 text-center wow fadeInUp animated"
+					data-wow-duration="500ms" data-wow-delay="600ms">
+				</figure>
+				<!-- end single member -->
+
+
+			</div>
+		</div>
+	</section>
+
+	<!--
+        End Meet Our Team
+        ==================================== -->
+
+
+
+	<!--
+        Our Works
+        ==================================== -->
+
+	<section id="works" class="works clearfix">
+		<div class="container">
+			<div class="row">
+
+				<div class="sec-title text-center">
+					<h2>Đồ án các khóa</h2>
+					<div class="devider"><i class="fa fa-book fa-lg"></i></div>
+				</div>
+
+				<div class="sec-sub-title text-center">
+					<p>Một số dự án mà các khóa trước đã làm được</p>
+				</div>
+
+				<div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+					<ul class="text-center">
+						<li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
+						<li><a href="javascript:;" data-filter=".giadung" class="filter">Gia dụng</a></li>
+						<li><a href="javascript:;" data-filter=".thucpham" class="filter">Thực phẩm</a></li>
+						<li><a href="javascript:;" data-filter=".dientu" class="filter">Đồ điện tử</a></li>
+						<li><a href="javascript:;" data-filter=".game" class="filter">Game</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="project-wrapper">
+
+			<figure class="mix work-item game">
+				<img src="img/works/1.jpg" alt="">
+				<figcaption class="overlay">
+					<a class="fancybox" rel="works" title="Web bán game" href="img/works/1.jpg"><i
+							class="fa fa-eye fa-lg"></i></a>
+					<h4>Web bán game</h4>
+				</figcaption>
+			</figure>
+
+			<figure class="mix work-item giadung thucpham">
+				<img src="img/works/2.jpg" alt="">
+				<figcaption class="overlay">
+					<a class="fancybox" rel="works" title="Web bán đồ cho trẻ em" href="img/works/2.jpg"><i
+							class="fa fa-eye fa-lg"></i></a>
+					<h4>Web bán đồ cho trẻ em</h4>
+				</figcaption>
+			</figure>
+
+			<figure class="mix work-item giadung">
+				<img src="img/works/3.jpg" alt="">
+				<figcaption class="overlay">
+					<a class="fancybox" rel="works" title="Web bán bàn ghế" href="img/works/3.jpg"><i
+							class="fa fa-eye fa-lg"></i></a>
+					<h4>Web bán bàn ghế</h4>
+				</figcaption>
+			</figure>
+
+			<figure class="mix work-item thucpham">
+				<img src="img/works/4.jpg" alt="">
+				<figcaption class="overlay">
+					<a class="fancybox" rel="works" title="Web bán thức ăn nhanh" href="img/works/4.jpg"><i
+							class="fa fa-eye fa-lg"></i></a>
+					<h4>Web bán thức ăn nhanh</h4>
+				</figcaption>
+			</figure>
+
+			<figure class="mix work-item dientu">
+				<img src="img/works/5.jpg" alt="">
+				<figcaption class="overlay">
+					<a class="fancybox" rel="works" title="Web bán điện thoại" href="img/works/5.jpg"><i
+							class="fa fa-eye fa-lg"></i></a>
+					<h4>Web bán điện thoại</h4>
+				</figcaption>
+			</figure>
+
+			<figure class="mix work-item giadung">
+				<img src="img/works/6.jpg" alt="">
+				<figcaption class="overlay">
+					<a class="fancybox" rel="works" title="Web bán quần áo" href="img/works/6.jpg"><i
+							class="fa fa-eye fa-lg"></i></a>
+					<h4>Web bán quần áo</h4>
+				</figcaption>
+			</figure>
+
+			<figure class="mix work-item giadung">
+				<img src="img/works/7.jpg" alt="">
+				<figcaption class="overlay">
+					<a class="fancybox" rel="works" title="Web bán trang sức" href="img/works/7.jpg"><i
+							class="fa fa-eye fa-lg"></i></a>
+					<h4>Web bán trang sức</h4>
+				</figcaption>
+			</figure>
+
+			<figure class="mix work-item giadung thucpham">
+				<img src="img/works/8.jpg" alt="">
+				<figcaption class="overlay">
+					<a class="fancybox" rel="works" title="Web bán thực phẩm" href="img/works/8.jpg"><i
+							class="fa fa-eye fa-lg"></i></a>
+					<h4>Web bán thực phẩm</h4>
+				</figcaption>
+			</figure>
+
+		</div>
+
+
+	</section>
+
+	<!--
+        End Our Works
+        ==================================== -->
+
+
+
+	<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+	<!-- Essential jQuery Plugins
+		================================================== -->
+	<!-- Main jQuery -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- Single Page Nav -->
+	<script src="js/jquery.singlePageNav.min.js"></script>
+	<!-- Twitter Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- jquery.fancybox.pack -->
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<!-- jquery.mixitup.min -->
+	<script src="js/jquery.mixitup.min.js"></script>
+	<!-- jquery.parallax -->
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<!-- jquery.countTo -->
+	<script src="js/jquery-countTo.js"></script>
+	<!-- jquery.appear -->
+	<script src="js/jquery.appear.js"></script>
+	<!-- Contact form validation -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+	<!-- jquery easing -->
+	<script src="js/jquery.easing.min.js"></script>
+	<!-- jquery easing -->
+	<script src="js/wow.min.js"></script>
+	<script>
+		var wow = new WOW({
+			boxClass: 'wow',      // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset: 120,          // distance to the element when triggering the animation (default is 0)
+			mobile: false,       // trigger animations on mobile devices (default is true)
+			live: true        // act on asynchronously loaded content (default is true)
+		}
+		);
+		wow.init();
+	</script>
+	<!-- Custom Functions -->
+	<script src="js/custom.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			/* ========================================================================= */
+			/*	Contact Form
+			/* ========================================================================= */
+
+			$('#contact-form').validate({
+				rules: {
+					name: {
+						required: true,
+						minlength: 2
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					message: {
+						required: true
+					}
+				},
+				messages: {
+					name: {
+						required: "come on, you have a name don't you?",
+						minlength: "your name must consist of at least 2 characters"
+					},
+					email: {
+						required: "no email, no message"
+					},
+					message: {
+						required: "um...yea, you have to write something to send this form.",
+						minlength: "thats all? really?"
+					}
+				},
+				submitHandler: function (form) {
+					$(form).ajaxSubmit({
+						type: "POST",
+						data: $(form).serialize(),
+						url: "process.php",
+						success: function () {
+							$('#contact-form :input').attr('disabled', 'disabled');
+							$('#contact-form').fadeTo("slow", 0.15, function () {
+								$(this).find(':input').attr('disabled', 'disabled');
+								$(this).find('label').css('cursor', 'default');
+								$('#success').fadeIn();
+							});
+						},
+						error: function () {
+							$('#contact-form').fadeTo("slow", 0.15, function () {
+								$('#error').fadeIn();
+							});
+						}
+					});
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
